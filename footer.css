@@ -1,0 +1,19 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #202225;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1{
+    font-size: small;
+    font-weight: 100;
+    color: white;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #40444b;
+}
