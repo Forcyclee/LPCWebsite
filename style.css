@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #2f3136;
+}
+
+.header {
+    background-color: #202225;
+    padding: 10px 5px;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.header a {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    vertical-align: middle;
+
+}
+
+.header-link a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    width: 155px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-link {
+    display: block;
+    display: inline-block;
+}
