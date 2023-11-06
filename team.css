@@ -101,3 +101,16 @@ body {
   display: flex;
   flex-wrap: wrap;   
 }
+
+@media (max-width: 768px) {
+  .TeamCard {
+    width: 100%; /* Faça as TeamCards ocuparem a largura total da tela */
+    margin: 10px 0; /* Adicione margens para separar as TeamCards */
+  }
+  .img-wraper {
+    width: 100%; /* Faça a imagem ocupar a largura total da tela */
+  }
+  .playerInfo {
+    width: 100%; /* Garanta que as informações do jogador ocupem a largura total da tela */
+  }
+}
