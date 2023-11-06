@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background-color: #2f3136;
+}
+
+#banner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  height: 100%;
+}
+
+#textInfoTeam {
+  font-family: Yantramanav, sans-serif;
+  font-weight: 700;
+  font-size: 6vw;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  -webkit-text-stroke-color: #FFD95A;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  color: #1A1A1C;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0%;
+  margin: 0;
+}
+

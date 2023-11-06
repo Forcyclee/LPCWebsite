@@ -2,7 +2,7 @@
     background-color: #202225;
     padding: 10px 5px;
     overflow: hidden;
-    width: 100%;
+    
     text-align: center;
 }
 
@@ -16,7 +16,7 @@
     color: white;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.8vw;
     line-height: 25px;
     border-radius: 4px;
     vertical-align: middle;
