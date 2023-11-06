@@ -3,7 +3,8 @@ body {
   background-color: #2f3136;
 }
 
-#banner {
+
+.banner {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -11,8 +12,8 @@ body {
   height: 100%;
 }
 
-#textInfoTeam {
-  font-family: Yantramanav, sans-serif;
+.textInfoTeam {
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   font-size: 6vw;
   line-height: 1;
@@ -28,3 +29,75 @@ body {
   margin: 0;
 }
 
+.playerInfo {
+  
+  width: 188px;
+  height: auto;
+  background-color: #202225;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+
+.nationality-name{
+  display: inline-flex;
+  align-items: center;
+  
+  
+}
+
+.nationality-name img{
+  width: 16px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.playerInfo h3{
+  font-size: smaller;
+  color: white;
+  line-height: 1.15;
+}
+
+.playerInfo h2 {
+  font-size: small;
+  color: #EF5421;
+  vertical-align: middle;
+  line-height: 1.17;
+}
+
+.playerInfo h1 {
+  font-size: large;
+  line-height: 1.44;
+}
+
+.imgPlayer {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0;
+  padding: 0;
+  border: none;
+  display: block; 
+  margin: 0 auto;
+  
+}
+
+.img-wraper{
+  width: 188px;
+  background-image: url(assets/playerbg.png);
+  text-align:center;
+  display:block;
+
+  
+}
+.TeamCard{
+  padding: 1vw;
+}
+
+.TeamCards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;   
+}
