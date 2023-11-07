@@ -4,33 +4,8 @@ body {
 }
 
 
-.banner {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-  height: 100%;
-}
-
-.textInfoTeam {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
-  font-size: 6vw;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  -webkit-text-stroke-color: #FFD95A;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  color: #1A1A1C;
-  vertical-align: middle;
-  text-align: center;
-  padding: 0%;
-  margin: 0;
-}
-
 .playerInfo {
-  
+
   width: 188px;
   height: auto;
   background-color: #202225;
@@ -39,20 +14,20 @@ body {
   font-weight: bolder;
 }
 
-.nationality-name{
+.nationality-name {
   display: inline-flex;
   align-items: center;
-  
-  
+
+
 }
 
-.nationality-name img{
+.nationality-name img {
   width: 16px;
   height: 12px;
   margin-right: 8px;
 }
 
-.playerInfo h3{
+.playerInfo h3 {
   font-size: smaller;
   color: white;
   line-height: 1.15;
@@ -76,41 +51,58 @@ body {
   margin-bottom: 0;
   padding: 0;
   border: none;
-  display: block; 
+  display: block;
   margin: 0 auto;
-  
+
 }
 
-.img-wraper{
+.img-wraper {
   width: 188px;
   background-image: url(assets/playerbg.png);
-  text-align:center;
-  display:block;
+  text-align: center;
+  display: block;
 
-  
+
 }
-.TeamCard{
+
+.TeamCard {
   padding: 1vw;
+  transition: transform 0.3s;
 }
 
-.TeamCards{
+.TeamCard:hover{
+  transform: translateY(-30px);
+}
+
+.TeamCards {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;   
+  text-align: center;
+  flex-wrap: wrap;
 }
+
+
+
+.bannerTeam.TeamCards {}
 
 @media (max-width: 768px) {
   .TeamCard {
-    width: 100%; /* Faça as TeamCards ocuparem a largura total da tela */
-    margin: 10px 0; /* Adicione margens para separar as TeamCards */
+    width: 100%;
+    /* Faça as TeamCards ocuparem a largura total da tela */
+    margin: 10px 0;
+    /* Adicione margens para separar as TeamCards */
   }
+
   .img-wraper {
-    width: 100%; /* Faça a imagem ocupar a largura total da tela */
+    width: 100%;
+    /* Faça a imagem ocupar a largura total da tela */
   }
+
   .playerInfo {
-    width: 100%; /* Garanta que as informações do jogador ocupem a largura total da tela */
+    width: 100%;
+    /* Garanta que as informações do jogador ocupem a largura total da tela */
   }
 }
