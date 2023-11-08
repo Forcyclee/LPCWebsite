@@ -61,48 +61,128 @@ body {
   background-image: url(assets/playerbg.png);
   text-align: center;
   display: block;
+}
 
 
+a{
+  text-decoration: none;
 }
 
 .TeamCard {
   padding: 1vw;
   transition: transform 0.3s;
+  margin-top: 60px;
 }
 
 .TeamCard:hover{
-  transform: translateY(-30px);
+  transform: translateY(-15px);
 }
 
 .TeamCards {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  display: flex;
   text-align: center;
   flex-wrap: wrap;
+  background-image: url(assets/banner-bg.jpg);
+
+  position: relative;
+  overflow: auto;
+  
+  max-width: 1100px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  height: 500px;
+
+  background-size: cover; 
+  background-position: center center;
+
+  border-radius: 40px;
+
+  margin: 50px auto 0;
+  
 }
 
 
 
-.bannerTeam.TeamCards {}
+.game-info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  display: inline;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.game-name{
+  font-size: 60px;
+  font-family: Arial;
+}
+
+.game-logo {
+  margin-right: 30px;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+
+.TeamCards#ow2{
+  background-image: url(assets/ow-bg.jpg);
+}
+
+.img-wraper#ow2-bg-player{
+  background-image: url(assets/ow.avif);
+}
+
+
+#footer{
+  bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+
+
 
 @media (max-width: 768px) {
+  .TeamCards {
+    width: auto;
+  }
+
   .TeamCard {
-    width: 100%;
-    /* Faça as TeamCards ocuparem a largura total da tela */
-    margin: 10px 0;
-    /* Adicione margens para separar as TeamCards */
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .TeamCard:hover {
+    transform: none;
   }
 
   .img-wraper {
     width: 100%;
-    /* Faça a imagem ocupar a largura total da tela */
   }
 
   .playerInfo {
     width: 100%;
-    /* Garanta que as informações do jogador ocupem a largura total da tela */
+  }
+  
+  .game-info {
+    padding: 10px;
+    margin-left: 0;
+  }
+  
+  .game-name {
+    font-size: 40px;
+  }
+  
+  .game-logo {
+    width: 30px;
+    height: 30px;
   }
 }
