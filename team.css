@@ -105,14 +105,63 @@ a{
 
 
 
-.bannerTeam.TeamCards {}
+.game-info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  display: inline;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.game-name{
+  font-size: 60px;
+  font-family: Arial;
+}
+
+.game-logo {
+  margin-right: 30px;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+
+.TeamCards#ow2{
+  background-image: url(assets/ow-bg.jpg);
+}
+
+.img-wraper#ow2-bg-player{
+  background-image: url(assets/ow.avif);
+}
+
+
+#footer{
+  bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+
+
 
 @media (max-width: 768px) {
+  .TeamCards {
+    width: auto;
+  }
+
   .TeamCard {
-    width: 100%;
-    /* Faça as TeamCards ocuparem a largura total da tela */
-    margin: 10px 0;
-    /* Adicione margens para separar as TeamCards */
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  .TeamCard:hover {
+    transform: none;
   }
 
   .img-wraper {
